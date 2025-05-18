@@ -27,9 +27,10 @@
 
 ## Project setup
 
-Install docker desktop for your given operating system.
-
 ```bash
+# install docker desktop for your given operating system, and ensure it is running: https://www.docker.com/products/docker-desktop/
+
+# install project dependencies
 $ npm install
 ```
 
