@@ -27,6 +27,8 @@
 
 ## Project setup
 
+Install docker desktop for your given operating system.
+
 ```bash
 $ npm install
 ```
@@ -34,11 +36,14 @@ $ npm install
 ## Compile and run the project
 
 ```bash
-# development
-$ npm run start
+# dev start db docker container
+$ npm run docker:dbonly
 
-# watch mode
+# dev watch mode running on machine (not docker)
 $ npm run start:dev
+
+# dev start docker for api + db (no hot reloading)
+$ npm run docker:all
 
 # production mode
 $ npm run start:prod

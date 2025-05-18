@@ -6,7 +6,6 @@ services:
       - "3000:3000"
     volumes:
       - .:/usr/src/app
-      - /usr/src/app/node_modules  # Avoid overriding node_modules
     depends_on:
       - postgres
     environment:
@@ -16,6 +15,7 @@ services:
       DB_PASSWORD: postgres
       DB_DATABASE: trade_crm_db
     restart: always
+    command: npm run start:dev
 
   postgres:
     image: postgres:15
