@@ -30,6 +30,8 @@
 ```bash
 # install docker desktop for your given operating system, and ensure it is running: https://www.docker.com/products/docker-desktop/
 
+# place service-account.json in /src/firebase, exported from firebase console (acts as auth to firebase-admin)
+
 # install project dependencies
 $ npm install
 ```
@@ -69,10 +71,10 @@ $ npm run test:cov
 # create a migration file
 $ npm run migrations:create --name=NameOfYourMigrationHere
 
-# apply(run) migration files
+# run migration forwards
 $ npm run migrations:run
 
-# revert a migration
+# revert migration backwards
 $ npm run migrations:revert
 ```
 
